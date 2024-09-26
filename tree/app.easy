@@ -430,6 +430,10 @@
             "_type": "App.Settings.ReleaseBuild"
         }
     },
+    "debug": {
+        "_id_": 844,
+        "_type": "Debug"
+    },
     "adMob": {
         "_id_": 138,
         "_type": "AdMob",
@@ -497,6 +501,12 @@
             ],
             "elementType_": "AdMob.AdUnit"
         }
+    },
+    "comment": {
+        "_id_": 166,
+        "_type": "Comment",
+        "list_": [],
+        "text_": "This app shows a website. Additionally it shows an AdMob ad at the bottom and an interstitial ad on every 4th page load.\nChange the URL to what you need. Also change:\n- appId field in AdMob to your own app ID.\n - unitId field in AdMob.AdUnit to your own unit ID.\n"
     },
     "packaging": {
         "_id_": 151,
@@ -567,12 +577,6 @@
             "_type": "String",
             "value_": "com.aaappps.website.admob552"
         }
-    },
-    "comment": {
-        "_id_": 166,
-        "_type": "Comment",
-        "list_": [],
-        "text_": "This app shows a website. Additionally it shows an AdMob ad at the bottom and an interstitial ad on every 4th page load.\nChange the URL to what you need. Also change:\n- appId field in AdMob to your own app ID.\n - unitId field in AdMob.AdUnit to your own unit ID.\n"
     },
     "_abVer": 229
 }
