@@ -1,0 +1,578 @@
+{
+    "_id_": 1,
+    "_type": "App",
+    "features": {
+        "_id_": 2,
+        "_type": "App.Features",
+        "list_": [
+            {
+                "_id_": 3,
+                "_type": "Variable",
+                "init": {
+                    "_id_": 4,
+                    "_type": "String.Text",
+                    "value": {
+                        "_id_": 5,
+                        "_type": "String",
+                        "value_": "https:\/\/google.com"
+                    }
+                },
+                "name": {
+                    "_id_": 6,
+                    "_type": "String",
+                    "value_": "URL"
+                },
+                "comment": {
+                    "_id_": 7,
+                    "_type": "Comment",
+                    "list_": [],
+                    "text_": "Change it to what you need."
+                }
+            },
+            {
+                "_id_": 8,
+                "_type": "Variable",
+                "init": {
+                    "_id_": 9,
+                    "_type": "Integer",
+                    "value_": 4
+                },
+                "name": {
+                    "_id_": 10,
+                    "_type": "String",
+                    "value_": "adFrequency"
+                },
+                "comment": {
+                    "_id_": 11,
+                    "_type": "Comment",
+                    "list_": [],
+                    "text_": "Show an interstitial ad on every 4th page load\n"
+                }
+            },
+            {
+                "_id_": 12,
+                "_type": "Activity",
+                "features": {
+                    "_id_": 13,
+                    "_type": "Activity.Features",
+                    "list_": [
+                        {
+                            "_id_": 14,
+                            "_type": "Variable",
+                            "init": {
+                                "_id_": 15,
+                                "_type": "Expression",
+                                "text": {
+                                    "_id_": 16,
+                                    "_type": "String",
+                                    "value_": "0"
+                                }
+                            },
+                            "name": {
+                                "_id_": 17,
+                                "_type": "String",
+                                "value_": "counter"
+                            }
+                        },
+                        {
+                            "_id_": 18,
+                            "_type": "AdMob.InterstitialAd",
+                            "adUnit": {
+                                "_id_": 19,
+                                "_type": "AdMob.AdUnitReference",
+                                "name": {
+                                    "_id_": 20,
+                                    "_type": "String",
+                                    "value_": "MyInterstitial"
+                                }
+                            },
+                            "name": {
+                                "_id_": 21,
+                                "_type": "String",
+                                "value_": "ad"
+                            },
+                            "autoReload": {
+                                "_id_": 22,
+                                "_type": "Boolean",
+                                "value_": true
+                            }
+                        }
+                    ]
+                },
+                "theme": {
+                    "_id_": 23,
+                    "_type": "Theme.DayNight"
+                },
+                "contentView": {
+                    "_id_": 24,
+                    "_type": "LinearLayout",
+                    "id": {
+                        "_id_": 25,
+                        "_type": "String",
+                        "value_": ""
+                    },
+                    "views": {
+                        "_id_": 26,
+                        "_type": "ViewList",
+                        "list_": [
+                            {
+                                "_id_": 334,
+                                "_type": "WebView.Decor",
+                                "progressBar": {
+                                    "_id_": 342,
+                                    "_type": "ProgressBar",
+                                    "id": {
+                                        "_id_": 344,
+                                        "_type": "String",
+                                        "value_": ""
+                                    }
+                                },
+                                "id": {
+                                    "_id_": 352,
+                                    "_type": "String",
+                                    "value_": ""
+                                },
+                                "views": {
+                                    "_id_": 340,
+                                    "_type": "ViewList",
+                                    "list_": []
+                                },
+                                "errorView": {
+                                    "_id_": 574,
+                                    "_type": "LinearLayout",
+                                    "id": {
+                                        "_id_": 575,
+                                        "_type": "String",
+                                        "value_": "errorPanel"
+                                    },
+                                    "views": {
+                                        "_id_": 576,
+                                        "_type": "ViewList",
+                                        "list_": [
+                                            {
+                                                "_id_": 577,
+                                                "_type": "TextView",
+                                                "id": {
+                                                    "_id_": 578,
+                                                    "_type": "String",
+                                                    "value_": ""
+                                                },
+                                                "android:textSize": {
+                                                    "_id_": 579,
+                                                    "_type": "Dimension",
+                                                    "unit": {
+                                                        "_id_": 580,
+                                                        "_type": "DimensionUnit",
+                                                        "value_": "sp"
+                                                    },
+                                                    "value": {
+                                                        "_id_": 581,
+                                                        "_type": "Float",
+                                                        "value_": 20
+                                                    }
+                                                },
+                                                "android:text": {
+                                                    "_id_": 582,
+                                                    "_type": "String",
+                                                    "value_": "Cannot Load The Web Page"
+                                                },
+                                                "android:gravity": {
+                                                    "_id_": 583,
+                                                    "_type": "Gravity",
+                                                    "value_": "center"
+                                                },
+                                                "android:textColor": {
+                                                    "_id_": 584,
+                                                    "_type": "Color",
+                                                    "color_": -1712
+                                                },
+                                                "android:layout_margin": {
+                                                    "_id_": 585,
+                                                    "_type": "Dimension",
+                                                    "unit": {
+                                                        "_id_": 586,
+                                                        "_type": "DimensionUnit",
+                                                        "value_": "dp"
+                                                    },
+                                                    "value": {
+                                                        "_id_": 587,
+                                                        "_type": "Float",
+                                                        "value_": 20
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "_id_": 588,
+                                                "_type": "Button",
+                                                "onClick": {
+                                                    "_id_": 589,
+                                                    "_type": "Sequence",
+                                                    "list_": [
+                                                        {
+                                                            "_id_": 590,
+                                                            "_type": "WebView.Reload",
+                                                            "viewId": {
+                                                                "_id_": 591,
+                                                                "_type": "View.Reference",
+                                                                "ref": {
+                                                                    "_id_": 592,
+                                                                    "_type": "String",
+                                                                    "value_": "@id\/webView"
+                                                                }
+                                                            }
+                                                        },
+                                                        {
+                                                            "_id_": 593,
+                                                            "_type": "View.Remove",
+                                                            "view": {
+                                                                "_id_": 594,
+                                                                "_type": "View.Reference",
+                                                                "ref": {
+                                                                    "_id_": 595,
+                                                                    "_type": "String",
+                                                                    "value_": "@id\/errorPanel"
+                                                                }
+                                                            }
+                                                        }
+                                                    ]
+                                                },
+                                                "id": {
+                                                    "_id_": 596,
+                                                    "_type": "String",
+                                                    "value_": ""
+                                                },
+                                                "android:text": {
+                                                    "_id_": 597,
+                                                    "_type": "String",
+                                                    "value_": "Try Again"
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    "android:background": {
+                                        "_id_": 598,
+                                        "_type": "Color",
+                                        "color_": -12437280
+                                    },
+                                    "android:gravity": {
+                                        "_id_": 599,
+                                        "_type": "Gravity",
+                                        "value_": "center"
+                                    },
+                                    "android:orientation": {
+                                        "_id_": 600,
+                                        "_type": "Orientation",
+                                        "value_": "vertical"
+                                    }
+                                },
+                                "refresh": {
+                                    "_id_": 346,
+                                    "_type": "SwipeRefreshLayout",
+                                    "id": {
+                                        "_id_": 350,
+                                        "_type": "String",
+                                        "value_": ""
+                                    }
+                                },
+                                "webView": {
+                                    "_id_": 353,
+                                    "_type": "WebView",
+                                    "webViewClient": {
+                                        "_id_": 356,
+                                        "_type": "WebView.WebViewClient",
+                                        "onPageStarted": {
+                                            "_id_": 357,
+                                            "_type": "Sequence",
+                                            "list_": [
+                                                {
+                                                    "_id_": 358,
+                                                    "_type": "CheckValue",
+                                                    "onZero": {
+                                                        "_id_": 359,
+                                                        "_type": "AdMob.Show",
+                                                        "name": {
+                                                            "_id_": 360,
+                                                            "_type": "String",
+                                                            "value_": "ad"
+                                                        }
+                                                    },
+                                                    "value": {
+                                                        "_id_": 361,
+                                                        "_type": "Expression",
+                                                        "text": {
+                                                            "_id_": 362,
+                                                            "_type": "String",
+                                                            "value_": "(counter++)%adFrequency"
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "id": {
+                                        "_id_": 387,
+                                        "_type": "String",
+                                        "value_": "webView"
+                                    },
+                                    "urlValue": {
+                                        "_id_": 388,
+                                        "_type": "Variable.Get",
+                                        "name": {
+                                            "_id_": 389,
+                                            "_type": "String",
+                                            "value_": "URL"
+                                        }
+                                    }
+                                },
+                                "android:layout_height": {
+                                    "_id_": 718,
+                                    "_type": "Dimension",
+                                    "unit": {
+                                        "_id_": 719,
+                                        "_type": "DimensionUnit",
+                                        "value_": "dp"
+                                    },
+                                    "value": {
+                                        "_id_": 720,
+                                        "_type": "Float",
+                                        "value_": 0
+                                    }
+                                },
+                                "android:layout_weight": {
+                                    "_id_": 721,
+                                    "_type": "Float",
+                                    "value_": 1
+                                }
+                            },
+                            {
+                                "_id_": 121,
+                                "_type": "AdMob.AdView",
+                                "id": {
+                                    "_id_": 122,
+                                    "_type": "String",
+                                    "value_": ""
+                                },
+                                "adUnit": {
+                                    "_id_": 123,
+                                    "_type": "AdMob.AdUnitReference",
+                                    "name": {
+                                        "_id_": 124,
+                                        "_type": "String",
+                                        "value_": "MyBanner"
+                                    }
+                                },
+                                "adSize": {
+                                    "_id_": 125,
+                                    "_type": "AdMob.AdSize",
+                                    "value_": "SMART_BANNER"
+                                },
+                                "android:layout_width": {
+                                    "_id_": 126,
+                                    "_type": "View.SpecialDimension",
+                                    "value_": "wrap_content"
+                                },
+                                "android:layout_height": {
+                                    "_id_": 127,
+                                    "_type": "View.SpecialDimension",
+                                    "value_": "wrap_content"
+                                },
+                                "android:layout_gravity": {
+                                    "_id_": 128,
+                                    "_type": "Gravity",
+                                    "value_": "center_horizontal"
+                                },
+                                "android:layout_weight": {
+                                    "_id_": 129,
+                                    "_type": "Integer",
+                                    "value_": 0
+                                }
+                            }
+                        ]
+                    },
+                    "comment": {
+                        "_id_": 130,
+                        "_type": "Comment",
+                        "list_": [],
+                        "text_": "The banner ad is displayed at the top.. If you want to display it at the bottom, move AdMob.AdView to below SwipeRefreshReload view."
+                    },
+                    "android:background": {
+                        "_id_": 131,
+                        "_type": "Color",
+                        "color_": -1
+                    },
+                    "android:orientation": {
+                        "_id_": 132,
+                        "_type": "Orientation",
+                        "value_": "vertical"
+                    }
+                },
+                "name": {
+                    "_id_": 133,
+                    "_type": "String",
+                    "value_": "Main"
+                },
+                "launcher": {
+                    "_id_": 134,
+                    "_type": "Activity.Launcher"
+                }
+            }
+        ]
+    },
+    "settings": {
+        "_id_": 135,
+        "_type": "App.Settings",
+        "debugBuild": {
+            "_id_": 136,
+            "_type": "App.Settings.DebugBuild"
+        },
+        "releaseBuild": {
+            "_id_": 137,
+            "_type": "App.Settings.ReleaseBuild"
+        }
+    },
+    "adMob": {
+        "_id_": 138,
+        "_type": "AdMob",
+        "appId": {
+            "_id_": 139,
+            "_type": "String",
+            "value_": "test"
+        },
+        "testDevices": {
+            "_id_": 140,
+            "_type": "List",
+            "list_": [],
+            "elementType_": "AdMob.TestDevice"
+        },
+        "comment": {
+            "_id_": 141,
+            "_type": "Comment",
+            "list_": [],
+            "text_": "Replace appId value with your own. You can find it in Google AdMob console in app settings."
+        },
+        "adUnits": {
+            "_id_": 142,
+            "_type": "List",
+            "list_": [
+                {
+                    "_id_": 143,
+                    "_type": "AdMob.AdUnit",
+                    "name": {
+                        "_id_": 144,
+                        "_type": "String",
+                        "value_": "MyInterstitial"
+                    },
+                    "unitId": {
+                        "_id_": 145,
+                        "_type": "String",
+                        "value_": "test"
+                    },
+                    "comment": {
+                        "_id_": 146,
+                        "_type": "Comment",
+                        "list_": [],
+                        "text_": "This is the ad unit for an interstitial ad. Replace unitId value with your own. You can find it in Google AdMob console on ad units page."
+                    }
+                },
+                {
+                    "_id_": 147,
+                    "_type": "AdMob.AdUnit",
+                    "name": {
+                        "_id_": 148,
+                        "_type": "String",
+                        "value_": "MyBanner"
+                    },
+                    "unitId": {
+                        "_id_": 149,
+                        "_type": "String",
+                        "value_": "test"
+                    },
+                    "comment": {
+                        "_id_": 150,
+                        "_type": "Comment",
+                        "list_": [],
+                        "text_": "This is the ad unit for a banner ad. Replace unitId value with your own. You can find it in Google AdMob console on ad units page."
+                    }
+                }
+            ],
+            "elementType_": "AdMob.AdUnit"
+        }
+    },
+    "packaging": {
+        "_id_": 151,
+        "_type": "App.Packaging",
+        "icon": {
+            "_id_": 152,
+            "_type": "AdaptiveIcon",
+            "background": {
+                "_id_": 153,
+                "_type": "Color",
+                "color_": -1
+            },
+            "foreground": {
+                "_id_": 154,
+                "_type": "DrawableReference",
+                "ref": {
+                    "_id_": 155,
+                    "_type": "String",
+                    "value_": "@drawable\/app_icon"
+                }
+            },
+            "legacyIcon": {
+                "_id_": 156,
+                "_type": "MipmapReference",
+                "ref": {
+                    "_id_": 157,
+                    "_type": "String",
+                    "value_": "@mipmap\/app_icon"
+                }
+            }
+        },
+        "targetSdk": {
+            "_id_": 158,
+            "_type": "Integer",
+            "value_": 34
+        },
+        "label": {
+            "_id_": 159,
+            "_type": "String",
+            "value_": "Website Ads"
+        },
+        "versionName": {
+            "_id_": 160,
+            "_type": "String",
+            "value_": "1.0"
+        },
+        "versionCode": {
+            "_id_": 161,
+            "_type": "Integer",
+            "value_": 1
+        },
+        "minSdk": {
+            "_id_": 162,
+            "_type": "Integer",
+            "value_": 24
+        },
+        "permissions": {
+            "_id_": 163,
+            "_type": "App.Permissions",
+            "INTERNET": {
+                "_id_": 164,
+                "_type": "Boolean",
+                "value_": true
+            }
+        },
+        "packageName": {
+            "_id_": 165,
+            "_type": "String",
+            "value_": "com.aaappps.website.admob552"
+        }
+    },
+    "comment": {
+        "_id_": 166,
+        "_type": "Comment",
+        "list_": [],
+        "text_": "This app shows a website. Additionally it shows an AdMob ad at the bottom and an interstitial ad on every 4th page load.\nChange the URL to what you need. Also change:\n- appId field in AdMob to your own app ID.\n - unitId field in AdMob.AdUnit to your own unit ID.\n"
+    },
+    "_abVer": 229
+}
